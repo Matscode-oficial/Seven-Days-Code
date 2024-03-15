@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My name</title>
+    <style>
+        body {
+            background-color: rgb(111, 45, 165);
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(215, 212, 212);
+        }
+
+        p {
+            font-size: 4rem;
+            color: rgb(215, 212, 212);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>7 Days of Code</h1>
+
+    <script>
+        var nome = prompt("Qual é o seu nome?")
+        var idade = prompt("Qual sua idade?")
+        var linguagem = prompt("Qual linguagem de programação você está estudando?")
+
+        document.write(`"<p>Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}!</p>"`)
+
+        var s = 1
+        var n = 2
+        var pergunta = prompt(`"Você gosta de estudar ${linguagem}? Responda com o número 1 para SIM ou 2 para NÃO."`)
+        var msg1 = `<p>Muito bom! Continue estudando ${linguagem} e você terá muito sucesso!</p>`
+        var msg2 = 'Ahh que pena... Já tentou aprender outras linguagens?'
+
+        if(pergunta == 1){
+            document.write(msg1)
+        }
+        if(pergunta == 2){
+            alert(msg2)
+            var quest2 = prompt("Qual outra linguagem tentou estudar?")
+            var msg3 = `<p>Muito bom! Continue estudando ${quest2} e você terá muito sucesso!</p>`
+            document.write(msg3)
+        }
+
+        
+
+
+    </script>
+</body>
+
+</html>
